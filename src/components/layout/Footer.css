@@ -1,0 +1,15 @@
+#footerDiv {
+    background: rgb(2,9,31);
+    background: -moz-linear-gradient(0deg, rgba(2,9,31,1) 89%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(2,9,31,1) 89%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(2,9,31,1) 89%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#02091f",endColorstr="#000000",GradientType=1); 
+    border-top: 1px solid #08447f;
+}
+#footerDivCoverDiv {
+    padding: 30px 0px;
+}
+#footerDivCoverDiv img {
+    max-width: 100%;
+    height: auto;
+}
