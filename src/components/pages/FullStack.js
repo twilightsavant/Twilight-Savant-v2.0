@@ -32,7 +32,7 @@ function FullStack() {
         <React.Fragment>
             <div className='fullstack_contentContainer_one'>
                 <div className="light_subHeading">COMPLETE CONCEPT TO STACK SOLUTIONS</div>
-                <p><img src={fullstack_recentTitle}  alt="Recent Fullstack Websites"/></p>
+                <p><img src={fullstack_recentTitle}  alt="Recent Fullstack Websites" className="contentTitleImg"/></p>
                 <div className="stack_content_rightContainer">
                     <div></div>
                     <div className="stack_content_right">
@@ -83,7 +83,7 @@ function FullStack() {
             <div id="fullstack_contentBlock" >
                 <div id="fullstack_galleryContainer_bg" >
                     <div className="light_subHeading">CUSTOM CONTENT MANAGEMENT DRIVEN</div>
-                    <p><img src={fullstack_galleryTitle}  alt="Small Business Websites"/></p>
+                    <p><img src={fullstack_galleryTitle}  alt="Small Business Websites" className="contentTitleImg"/></p>
                     <div id="stack_galleryDesc"><div id='stack_galleryTxt' className="light_description">Custom written content managmeent system allowing the rapid deployment and administrators management of all website content. Implemeneted on hundreds of small business websites utilizing a LAMP stack.</div></div>
                     <div id='fullstack_galleryContainer'>
                         <div></div>

@@ -16,8 +16,8 @@
 #contentContainer_one_graphicFlex .d_accent_img, #contentContainer_one_graphicFlex .index_stackThumb {margin: 20px;}
 #contentContainer_one_graphicFlex .index_stackThumb { border: 5px solid white; }
 .light_description {
-    width: 600px;
     margin: 0 auto;
+    padding: 0px 20px;
 }
 #index_codingLogos {
     max-width: 100%;
@@ -45,6 +45,9 @@
     background-position:  bottom;
     padding: 50px 0px;
 }
-@media screen and (min-width: 900px) {
 
+@media screen and (min-width: 900px) {
+    .light_description {
+        width: 600px;
+    }
 }
