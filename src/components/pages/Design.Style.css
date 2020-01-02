@@ -1,0 +1,73 @@
+.graphicdesign_contentContainer {
+    border-top: 1px solid #046fda;
+    border-bottom: 1px solid #046fda;
+    padding: 50px 0px;
+}
+.graphicdesign_contentContainer {
+    background: rgb(5,38,121);
+    background: -moz-linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    background: linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052679",endColorstr="#01050f",GradientType=1); 
+    margin-bottom: 40px;
+}
+#graphicdesign_scrC {
+    display: flex;
+    justify-content: center;
+}
+#graphicdesign_scr {
+    display: flex;
+    flex-basis: 1050px;
+    align-self: center;
+}
+.graphic_leftAccent {
+    padding-right: 20px;
+    align-self: center;
+}
+.graphic_rightAccent {
+    padding-left: 20px;
+    align-self: center;
+}
+.graphicText_1 {
+    text-align: right;
+    color: white;
+    align-self: center;
+}
+
+/* Second Box Styles */
+.gd_gall_top {
+    display: flex;
+}
+.gd_gall_container {
+    background: green;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .graphic_leftAccent, .graphic_rightAccent {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #graphicdesign_adobeLogosCenter {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    #graphicdesign_scr {
+        display: block;
+        text-align: center;
+    }
+    #graphicdesign_adobeLogosCenter {
+        max-width: 100%;
+        height: auto;
+    }
+    #graphicdesign_adobeLogosLeft {
+        display: none;
+    }
+    .graphicText_1 {
+        text-align: center;
+        padding: 0px 20px;
+    }
+}
