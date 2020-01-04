@@ -30,10 +30,10 @@ function Design() {
                         <div>&nbsp;</div>
                         <div className="graphic_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
                         
-                            <img src={graphicdesign_adobe} alt="Adobe Suite Logos" id="graphicdesign_adobeLogosLeft"/>
-                            <img src={graphicdesign_adobecentered} alt="Adobe Suite Logos" id="graphicdesign_adobeLogosCenter"/>
+                            <img src={graphicdesign_adobe} alt="Adobe Suite Logos" id="graphicdesign_adobeLogosLeft" />
+                            <img src={graphicdesign_adobecentered} alt="Adobe Suite Logos" id="graphicdesign_adobeLogosCenter" />
                         
-                        <div className="graphicText_1 light_description">
+                        <div className="graphicText_1_adobe">
                             <div><span>ADOBE SUITE EXPERIENCE</span></div>
                             The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
                             <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
@@ -55,10 +55,13 @@ function Design() {
                     </div>
                     <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
                 </div>
-                <div className="graphicText_1 light_description bottomMargin">
-                    <div><span>Web Design Artwork</span></div>
-                    The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
-                    <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                
+                <div className="graphicText_flex">
+                    <div className="graphicText_1">
+                        <div><span>Web Design Artwork</span></div>
+                        The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
+                        <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                    </div>
                 </div>
 
                 <div className="gd_gall_top">
@@ -68,10 +71,12 @@ function Design() {
                     </div>
                     <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
                 </div>
-                <div className="graphicText_1 light_description">
-                    <div><span>Print Design Artwork</span></div>
-                    The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
-                    <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                <div className="graphicText_flex">
+                    <div className="graphicText_1">
+                        <div><span>Print Design Artwork</span></div>
+                        The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
+                        <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

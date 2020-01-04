@@ -34,18 +34,13 @@ function Home() {
             </div>
             <div id='contentContainer_two'>
                 <div id='contentContainer_two_BG'>
-                    <div className="light_subHeading">PROGRESSIVE FRONT AND BACK END STACKS</div>
+                    <div className="light_subHeading">PROGRESSIVE FRONT AND BACK END</div>
                     <div><img src={index_title_codingTechnologies}  alt="Coding Technologies" className="contentTitleImg"/></div>
                     <div><img src={index_codingLogos}  id="index_codingLogos" alt="Coding Logos"/></div>
                     <div className="light_description">
                         Quisque sit amet nisl non quam placerat ullamcorper. In at urna consectetur, hendrerit turpis eget, feugiat ante. Mauris blandit arcu in sem blandit, nec placerat sem consequat...
                     </div>
                 </div>
-            </div>
-            <div id='contentContainer_three'>
-                <div className="light_subHeading">ONLINE MARKETING & PRINT DESIGN</div>
-                <div><img src={index_title_graphicDesign}  alt="Graphic Design"/></div>
-
             </div>
         </React.Fragment>
     )

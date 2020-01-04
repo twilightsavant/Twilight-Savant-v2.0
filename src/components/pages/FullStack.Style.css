@@ -36,7 +36,7 @@
 /* Content Block 1 Style */
 .fullstack_contentContainer_one .stackText_1 div {
     display: flex;
-    justify-content: right;
+    justify-content: left;
 }
 
 .fullstack_contentContainer_one .stackText_1 span {
