@@ -37,15 +37,21 @@
 /* Second Box Styles */
 .gd_gall_top {
     display: flex;
+    justify-content: center;
 }
-.gd_gall_container {
-    background: green;
+.graphicText_1 {
+    padding-top: 40px;
 }
 
-
+.bottomMargin {
+    margin-bottom: 80px;
+}
 @media screen and (max-width: 1000px) {
     .graphic_leftAccent, .graphic_rightAccent {
         display: none;
+    }
+    .gd_gall_top {
+        display: block;
     }
 }
 

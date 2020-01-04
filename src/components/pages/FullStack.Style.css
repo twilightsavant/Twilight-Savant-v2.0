@@ -42,7 +42,7 @@
 .fullstack_contentContainer_one .stackText_1 span {
     border-bottom: 4px solid #4062af;
     width: 251px;
-    text-align: right;
+    text-align: left;
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 20px;
@@ -50,7 +50,7 @@
 .fullstack_contentContainer_one .stackText_1 {
     color: white;
     font-size: 14px;
-    text-align: right;
+    text-align: left;
     padding-right: 10px;
     align-self: center;
     padding-bottom: 20px;

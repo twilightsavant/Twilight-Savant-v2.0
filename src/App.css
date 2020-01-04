@@ -11,6 +11,7 @@
   font-size: 14px;
 }
 .contentTitleImg {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
+  margin: 0px 10px;
 }

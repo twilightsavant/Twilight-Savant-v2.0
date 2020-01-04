@@ -11,10 +11,9 @@ import FullStack from './components/pages/FullStack';
 import Design from './components/pages/Design';
 import About from './components/pages/About';
 
-
+//Import style sheets
 import './App.css';
 import './components/layout/Header.css';
-
 
 
 class App extends Component {

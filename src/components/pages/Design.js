@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Slideshow from './slideshow';
+
 
 /* Import Images */
 import graphicdesign_graphicTitle from '../images/graphicdesign_graphicTitle.png';
@@ -45,20 +47,31 @@ function Design() {
             <div className='graphicdesign_contentContainer'>
                 <div className="light_subHeading">PRODUCTION ARTIST</div>
                 <p><img src={graphicdesign_commercialArtwork}  alt="Commercial Artwork" className="contentTitleImg"/></p>
-                <div class="gd_gall_top">
-                    <div class="gd_gall_container" >
-                        <video width="698px" controls>
-                            <source src={video1} type="video/mp4" />    
-                        </video>
-                        GRAPHIC GOES HERE
+                
+                <div className="gd_gall_top">
+                    <div className="graphic_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
+                    <div className="gd_gall_container" >
+                        <Slideshow />
                     </div>
-                    <div className="graphicText_1 light_description">
-                        <div><span>ADOBE SUITE EXPERIENCE</span></div>
-                        The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
-                        <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
-                    </div>
-                    <div className="stackThumbnail"></div>
                     <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
+                </div>
+                <div className="graphicText_1 light_description bottomMargin">
+                    <div><span>Web Design Artwork</span></div>
+                    The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
+                    <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                </div>
+
+                <div className="gd_gall_top">
+                    <div className="graphic_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
+                    <div className="gd_gall_container" >
+                        <Slideshow />
+                    </div>
+                    <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
+                </div>
+                <div className="graphicText_1 light_description">
+                    <div><span>Print Design Artwork</span></div>
+                    The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
+                    <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
                 </div>
             </div>
         </React.Fragment>
