@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slideshow from './slideshow';
+import Plx from 'react-plx';
 
 
 /* Import Images */
@@ -10,16 +11,32 @@ import fullstack_leftAccent from '../images/fullstack_leftAccent.png';
 import fullstack_rightAccent from '../images/fullstack_rightAccent.png';
 import graphicdesign_adobe from '../images/graphicdesign_adobe.png';
 import graphicdesign_adobecentered from '../images/graphicdesign_adobecentered.png';
-
+import circuit_bg from '../images/circuit_BG.jpg';
+import circuit_bg_bottom from '../images/circuit_BG_bottom.jpg';
 
 /* Import Videos */
 import video1 from '../video/video1.mp4'
 
-
 /* Import CSS Styles */
 import './Design.Style.css';
 
+//data for our parallax object
+const parallaxData = [
+    {
+      start: 'self',
+      duration: '100%',
+      properties: [
+        {
+          startValue: 1,
+          endValue: -150,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
+
 function Design() {
+    
     return (
         <React.Fragment>
             <div className='graphicdesign_contentContainer'>
@@ -44,6 +61,14 @@ function Design() {
                     </div>
                     <div></div>
                 </div>
+            </div>
+            <div className='circuit_bg'>
+            <Plx
+                className='circuitParallax'
+                parallaxData={ parallaxData }
+            >
+                <img src={circuit_bg} className="circuit_img" />
+            </Plx>
             </div>
             <div className='graphicdesign_contentContainer'>
                 <div className="light_subHeading">PRODUCTION ARTIST</div>
@@ -77,6 +102,14 @@ function Design() {
                         Camera ready artwork for physical media is essential to building a brand and a business. Starting from the existing look of a customers website print materials can be created for any size and any quantity. From business cards to billboards I can deliver a pleasing product...
                     </div>
                 </div>
+            </div>
+            <div className='circuit_bg'>
+            <Plx
+                className='circuitParallax'
+                parallaxData={ parallaxData }
+            >
+                <img src={circuit_bg_bottom} className="circuit_img" />
+            </Plx>
             </div>
         </React.Fragment>
     )

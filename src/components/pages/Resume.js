@@ -1,14 +1,30 @@
 import React from 'react';
+import Plx from 'react-plx';
 
 /* Import Images */
 import fullstack_leftAccent from '../images/fullstack_leftAccent.png';
 import fullstack_rightAccent from '../images/fullstack_rightAccent.png';
 import resume_pic from '../images/resume_pic.png';
 import resume_title from '../images/resume_title.png';
-
+import circuit_bg_bottom from '../images/circuit_BG_bottom.jpg';
 
 /* Import Style */
 import './Resume.style.css';
+
+//data for our parallax object
+const parallaxData = [
+    {
+      start: 'self',
+      duration: '100%',
+      properties: [
+        {
+          startValue: 1,
+          endValue: -150,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
 
 function Resume() {
     return(
@@ -94,6 +110,14 @@ function Resume() {
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div className='circuit_bg'>
+            <Plx
+                className='circuitParallax'
+                parallaxData={ parallaxData }
+            >
+                <img src={circuit_bg_bottom} className="circuit_img" />
+            </Plx>
             </div>
         </React.Fragment>
     )
