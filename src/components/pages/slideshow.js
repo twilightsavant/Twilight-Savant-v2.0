@@ -18,7 +18,7 @@ const slideImages = [
 ];
  
 const properties = {
-  duration: 5000,
+  duration: 3000,
   transitionDuration: 500,
   infinite: true,
   indicators: false,
@@ -36,27 +36,22 @@ class slideshow extends Component {
           <Slide {...properties}>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${webSlide_1})`}}>
-                a
               </div>
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${webSlide_2})`}}>
-                b
               </div>
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${webSlide_3})`}}>
-                c
               </div>
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${webSlide_4})`}}>
-                d
               </div>
             </div>
             <div className="each-slide">
               <div style={{'backgroundImage': `url(${webSlide_5})`}}>
-                e
               </div>
             </div>
         </Slide>
