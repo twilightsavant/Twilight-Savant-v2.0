@@ -9,11 +9,13 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import FullStack from './components/pages/FullStack';
 import Design from './components/pages/Design';
-import About from './components/pages/About';
+import Resume from './components/pages/Resume';
+
 
 //Import style sheets
 import './App.css';
 import './components/layout/Header.css';
+
 
 
 class App extends Component {
@@ -26,13 +28,14 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/FullStack" component={FullStack} />
         <Route path="/Design" component={Design} />
+        <Route path="/Resume" component={Resume} />
 
         <Route exact path="/blank" render={props => (
           <React.Fragment>
              
           </React.Fragment>
         ) } />
-        <Route path='/about' component={About} />
+        
         <Footer />
       </Router>
       </div>

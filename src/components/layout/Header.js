@@ -13,11 +13,9 @@ function Header() {
                     <div id='d_headerLeftLinks'>
                         <Link to="/">Home</Link>
                         <Link to="/FullStack">Full Stack</Link>
-                        <Link to="/Design">Design</Link>
                     </div>
                     <div id='d_headerRightLinks'>
-                        <Link to="/3D_Work">3D Work</Link>
-                        <Link to="/Photography">Photography</Link>
+                        <Link to="/Design">Design</Link>
                         <Link to="/Resume">Resume</Link>
                     </div>
                     <div id='d_headerLogo'><img src={d_logo} alt="Twilight Savant" /></div>

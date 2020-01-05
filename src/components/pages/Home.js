@@ -29,7 +29,7 @@ function Home() {
                     <img src={index_stackThumb_rightAccent} className="d_accent_img" height="195px" alt=""/>
                 </div>
                 <div className="light_description">
-                    Quisque sit amet nisl non quam placerat ullamcorper. In at urna consectetur, hendrerit turpis eget, feugiat ante. Mauris blandit arcu in sem blandit, nec placerat sem consequat...
+                    Specializing in developing all aspects of a concept into a full fledged application. No project too large from a single portfolio website to government compliant solutions met with professionalism and dedication.
                 </div>
             </div>
             <div id='contentContainer_two'>
@@ -38,7 +38,7 @@ function Home() {
                     <div><img src={index_title_codingTechnologies}  alt="Coding Technologies" className="contentTitleImg"/></div>
                     <div><img src={index_codingLogos}  id="index_codingLogos" alt="Coding Logos"/></div>
                     <div className="light_description">
-                        Quisque sit amet nisl non quam placerat ullamcorper. In at urna consectetur, hendrerit turpis eget, feugiat ante. Mauris blandit arcu in sem blandit, nec placerat sem consequat...
+                        With over 20 years as a developer I have an appreciation for the wide range of coding languages. Their optimal uses and the heritage of the newest development trends on the web.
                     </div>
                 </div>
             </div>
