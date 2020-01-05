@@ -104,7 +104,7 @@ function FullStack() {
                         <div></div>
                     </div>
                     <div id="fullstack_galleryShadow">
-                        <img src={fullstack_galleryShadow} alt="" />
+                        <img src={fullstack_galleryShadow} alt="Gallery Shadow" />
                     </div>
                 </div>
             </div>

@@ -5,8 +5,7 @@ import m_logo from '../images/m_headerLogo.png';
 import m_navBtn from '../images/m_headerNavBtn.png';
 import './Header.css';
 
-function Header() {
-    return (
+const Header = props => (  
         <header>
             <div id='d_headerCodeBG'>
                 <div id='d_headerBG'>
@@ -22,13 +21,12 @@ function Header() {
                 </div>
                 <div id='m_headerBG'>
                     <div id='m_headerNavBtn'>
-                        <img src={m_navBtn} alt="Nav" id='m_header_navBtn'/>
+                        <img src={m_navBtn} alt="Nav" id='m_header_navBtn' onClick={props.drawerClickHandler}/>
                     </div>
                     <div id='m_headerLogo'><img src={m_logo} alt="Twilight Savant"/></div>
                 </div>
             </div>
         </header>
-    )
-}
+);
 
 export default Header

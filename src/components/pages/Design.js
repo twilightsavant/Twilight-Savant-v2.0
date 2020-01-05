@@ -11,6 +11,7 @@ import fullstack_rightAccent from '../images/fullstack_rightAccent.png';
 import graphicdesign_adobe from '../images/graphicdesign_adobe.png';
 import graphicdesign_adobecentered from '../images/graphicdesign_adobecentered.png';
 
+
 /* Import Videos */
 import video1 from '../video/video1.mp4'
 
@@ -59,8 +60,7 @@ function Design() {
                 <div className="graphicText_flex">
                     <div className="graphicText_1">
                         <div><span>Web Design Artwork</span></div>
-                        The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
-                        <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                        Even the most complex web application starts with a solid design foundation. From the single page display site to the largest of social platform undertakings a consistent and pleasing design sets the tone for the user. I can help get the look correct before the coding begins and help carry the UI through to the end.
                     </div>
                 </div>
 
@@ -74,8 +74,7 @@ function Design() {
                 <div className="graphicText_flex">
                     <div className="graphicText_1">
                         <div><span>Print Design Artwork</span></div>
-                        The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
-                        <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
+                        Camera ready artwork for physical media is essential to building a brand and a business. Starting from the existing look of a customers website print materials can be created for any size and any quantity. From business cards to billboards I can deliver a pleasing product...
                     </div>
                 </div>
             </div>
