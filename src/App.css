@@ -16,3 +16,11 @@
   height: auto;
   margin: 0px 10px;
 }
+.circuit_bg {
+  height: 40px;
+  overflow: hidden;
+}
+.circuit_bg img {
+  width: 100%;
+  height: auto;
+}

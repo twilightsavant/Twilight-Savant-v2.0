@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Plx from 'react-plx';
 
 /* Import Images */
 import fullstack_recentTitle from '../images/fullstack_recentTitle.png';
@@ -22,12 +22,31 @@ import fullstack_img10 from '../images/fullstack_gallery/img10.jpg';
 import fullstack_img11 from '../images/fullstack_gallery/img11.jpg';
 import fullstack_img12 from '../images/fullstack_gallery/img12.jpg';
 import fullstack_galleryShadow from '../images/fullstack_galleryShadow.png';
+import circuit_bg from '../images/circuit_BG.jpg';
+import circuit_bg_bottom from '../images/circuit_BG_bottom.jpg';
 
 
 /* Import CSS Sheets */
 import './FullStack.Style.css';
 
+//data for our parallax object
+const parallaxData = [
+    {
+      start: 'self',
+      duration: '100%',
+      properties: [
+        {
+          startValue: 1,
+          endValue: -150,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
+
 function FullStack() {
+    //<div className="circuit_bg"><img src={circuit_bg} className="circuit_parallax" /></div>
+   
     return (
         <React.Fragment>
             <div className='fullstack_contentContainer_one'>
@@ -48,6 +67,14 @@ function FullStack() {
                     <div></div>
                 </div>
             </div>
+            <div className='circuit_bg'>
+            <Plx
+                className='circuitParallax'
+                parallaxData={ parallaxData }
+            >
+                <img src={circuit_bg} className="circuit_img" />
+            </Plx>
+            </div>
             <div id='fullstack_contentContainer_two'>
                 <div id="stack_content_LeftContainer">
                     <div></div>
@@ -63,6 +90,14 @@ function FullStack() {
                     </div>
                     <div></div>
                 </div>
+            </div>
+            <div className='circuit_bg'>
+            <Plx
+                className='circuitParallax'
+                parallaxData={ parallaxData }
+            >
+                <img src={circuit_bg_bottom} className="circuit_img" />
+            </Plx>
             </div>
             <div className='fullstack_contentContainer_one'>
                 <div className="stack_content_rightContainer">
