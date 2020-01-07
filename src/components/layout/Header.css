@@ -1,6 +1,16 @@
 #d_headerCodeBG {
     
 }
+#d_headerBG {
+    z-index: 50;
+    position: relative;
+    top: -400px;
+}
+#d_div_Parallax {
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+}
 @media screen and (min-width: 900px) {
     #d_headerCodeBG {
         background-image: url("../images/d_headerCodeBG.jpg");
@@ -8,6 +18,7 @@
         background-attachment: fixed;
         background-size: cover;
         height: 400px;
+        overflow: hidden;
     }
     #d_headerBG {
         background-image: url("../images/d_headerBG_tileX.png");
@@ -58,6 +69,14 @@
         background-repeat: repeat-x;
         height: 135px;
         font-size: 14px;
+        position: relative;
+        top: -310px;
+    }
+    #m_div_Parallax {
+    z-index: 0;
+    height: 250px;
+    width: 100%;
+    padding-top: 60px;
     }
     #m_headerLogo {
         text-align: left;
@@ -74,9 +93,13 @@
     #d_headerCodeBG {
         background-image: url("../images/m_headerCodeBG.jpg");
         height: 250px;
+        overflow: hidden;
     }
     /* hide desktop content */
     #d_headerBG {
+        display: none;
+    }
+    #d_div_Parallax {
         display: none;
     }
 }

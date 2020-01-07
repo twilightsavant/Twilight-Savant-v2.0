@@ -8,15 +8,7 @@ import webSlide_2 from '../images/webSlide_2.jpg';
 import webSlide_3 from '../images/webSlide_3.jpg';
 import webSlide_4 from '../images/webSlide_4.jpg';
 import webSlide_5 from '../images/webSlide_5.jpg';
- 
-const slideImages = [
-  './images/slide_2.jpg',
-  './images/slide_3.jpg',
-  './images/slide_4.jpg',
-  './images/slide_4.jpg',
-  './images/slide_4.jpg'
-];
- 
+
 const properties = {
   duration: 3000,
   transitionDuration: 500,

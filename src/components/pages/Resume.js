@@ -116,7 +116,7 @@ function Resume() {
                 className='circuitParallax'
                 parallaxData={ parallaxData }
             >
-                <img src={circuit_bg_bottom} className="circuit_img" />
+                <img src={circuit_bg_bottom} className="circuit_img" alt="Circuit BG"/>
             </Plx>
             </div>
         </React.Fragment>

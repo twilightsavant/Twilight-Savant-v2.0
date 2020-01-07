@@ -72,7 +72,7 @@ function FullStack() {
                 className='circuitParallax'
                 parallaxData={ parallaxData }
             >
-                <img src={circuit_bg} className="circuit_img" />
+                <img src={circuit_bg} className="circuit_img" alt="Circuit BG" />
             </Plx>
             </div>
             <div id='fullstack_contentContainer_two'>
@@ -96,7 +96,7 @@ function FullStack() {
                 className='circuitParallax'
                 parallaxData={ parallaxData }
             >
-                <img src={circuit_bg_bottom} className="circuit_img" />
+                <img src={circuit_bg_bottom} className="circuit_img" alt="Circuit BG" />
             </Plx>
             </div>
             <div className='fullstack_contentContainer_one'>

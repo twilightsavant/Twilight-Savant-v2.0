@@ -8,8 +8,22 @@
 }
 #footerDivCoverDiv {
     padding: 30px 0px;
+    color: #868789;
 }
 #footerDivCoverDiv img {
     max-width: 100%;
     height: auto;
+}
+.footerLink {
+    padding: 0px 20px;
+    text-decoration: none;
+}
+#footerDivCoverDiv a, #footerDivCoverDiv a:visited {
+    color: #868789;
+    text-decoration: none;
+}
+
+#footerDivCoverDiv a:hover {
+    color: white;
+    text-decoration: none;
 }

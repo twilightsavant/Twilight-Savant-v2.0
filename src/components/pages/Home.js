@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 /* Import Images */
 import index_title_fullStack from '../images/index_title_fullStack.png';
 import index_title_codingTechnologies from '../images/index_title_codingTechnologies.png';
-import index_title_graphicDesign from '../images/index_title_graphicDesign.png';
 import index_stackThumb1 from '../images/index_stackThumb1.jpg';
 import index_stackThumb2 from '../images/index_stackThumb2.jpg';
 import index_stackThumb3 from '../images/index_stackThumb3.jpg';

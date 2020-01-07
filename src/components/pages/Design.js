@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Slideshow from './slideshow';
 import Plx from 'react-plx';
 
@@ -13,9 +12,6 @@ import graphicdesign_adobe from '../images/graphicdesign_adobe.png';
 import graphicdesign_adobecentered from '../images/graphicdesign_adobecentered.png';
 import circuit_bg from '../images/circuit_BG.jpg';
 import circuit_bg_bottom from '../images/circuit_BG_bottom.jpg';
-
-/* Import Videos */
-import video1 from '../video/video1.mp4'
 
 /* Import CSS Styles */
 import './Design.Style.css';
@@ -67,7 +63,7 @@ function Design() {
                 className='circuitParallax'
                 parallaxData={ parallaxData }
             >
-                <img src={circuit_bg} className="circuit_img" />
+                <img src={circuit_bg} className="circuit_img" alt="Circuit BG"/>
             </Plx>
             </div>
             <div className='graphicdesign_contentContainer'>
@@ -108,7 +104,7 @@ function Design() {
                 className='circuitParallax'
                 parallaxData={ parallaxData }
             >
-                <img src={circuit_bg_bottom} className="circuit_img" />
+                <img src={circuit_bg_bottom} className="circuit_img" alt="Circuit BG" />
             </Plx>
             </div>
         </React.Fragment>

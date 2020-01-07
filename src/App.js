@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //import layout elements
 import Header from './components/layout/Header';
@@ -13,11 +13,9 @@ import FullStack from './components/pages/FullStack';
 import Design from './components/pages/Design';
 import Resume from './components/pages/Resume';
 
-
 //Import style sheets
 import './App.css';
 import './components/layout/Header.css';
-
 
 
 class App extends Component {

@@ -6,7 +6,6 @@ import sideDrawer_logo from '../images/sideDrawer_logo.jpg';
 
 /* Import CSS */
 import './SideDrawer.css';
-import Backdrop from '../Backdrop/Backdrop';
 
 const SideDrawer = props => {
     let drawerClasses = 'side-drawer';
@@ -16,7 +15,7 @@ const SideDrawer = props => {
 
    return (
     <nav className={drawerClasses}>
-        <Link to="/" onClick={props.click}><img src={sideDrawer_logo} id="sideDrawer_logo"/></Link>
+        <Link to="/" onClick={props.click}><img src={sideDrawer_logo} id="sideDrawer_logo" alt="Side Drawer Logo" /></Link>
         <ul>
             <li><Link to="/" onClick={props.click}>Home</Link></li>
             <li><Link to="/FullStack" onClick={props.click}>Full Stack</Link></li>
