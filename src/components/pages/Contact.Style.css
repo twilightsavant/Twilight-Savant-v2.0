@@ -1,0 +1,44 @@
+.contact_contentContainer {
+    border-top: 1px solid #046fda;
+    border-bottom: 1px solid #046fda;
+    padding: 50px 0px;
+}
+.contact_contentContainer {
+    background: rgb(5,38,121);
+    background: -moz-linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    background: linear-gradient(90deg, rgba(5,38,121,1) 0%, rgba(2,17,49,1) 86%, rgba(2,17,49,1) 90%, rgba(1,5,15,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#052679",endColorstr="#01050f",GradientType=1);
+}
+#contact_scrC {
+    display: flex;
+    justify-content: center;
+}
+#contact_scr {
+    display: flex;
+    flex-basis: 1050px;
+    align-self: center;
+    justify-content: center;
+}
+.contact_leftAccent {
+    padding-right: 20px;
+    align-self: center;
+}
+.contact_rightAccent {
+    padding-left: 20px;
+    align-self: center;
+}
+.contactText_1 {
+    flex-basis: 600px;
+    text-align: left;
+    color: white;
+    align-self: center;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.contactText_1 div {
+    margin-bottom: 20px;
+}

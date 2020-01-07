@@ -12,6 +12,7 @@ import Home from './components/pages/Home';
 import FullStack from './components/pages/FullStack';
 import Design from './components/pages/Design';
 import Resume from './components/pages/Resume';
+import Contact from './components/pages/Contact';
 
 //Import style sheets
 import './App.css';
@@ -20,9 +21,15 @@ import './components/layout/Header.css';
 
 class App extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    name: '',
+    company: '',
+    phone: '',
+    email: '',
+    message: ''
   };
 
+  //toggle the mobile navigation bar with a click
   drawerToggleClickHandler = () => {
     console.log('clicked');
     this.setState((prevState) => {
@@ -30,8 +37,30 @@ class App extends Component {
     });
   };
 
+  //make the backdrop go away with a click
   backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
+  }
+
+  //update the form from the contact page
+  handleChange = e => {
+    console.log("changed");
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleSubmit = e => {
+    e.preventDefault(); //block refresh
+    const { name, company, phone, email, message } = this.state;
+    console.log("Boom Submit");
+
+    //clear out form
+    this.setState( {
+      name: '',
+      company: '',
+      phone: '',
+      email: '',
+      message: ''
+    })
   }
 
   render() {
@@ -51,6 +80,9 @@ class App extends Component {
         <Route path="/FullStack" component={FullStack} />
         <Route path="/Design" component={Design} />
         <Route path="/Resume" component={Resume} />
+        <Route path="/Contact"> 
+          <Contact handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        </Route>
         <Footer />
       </Router>
       </div>
