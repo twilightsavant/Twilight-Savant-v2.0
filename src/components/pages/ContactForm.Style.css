@@ -1,0 +1,47 @@
+#contactMeForm {
+    width: 100%;
+    position: relative;
+}
+.form-wrap {
+    position: relative;
+}
+#contactMeForm label {
+    display: inline;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    pointer-events: none;
+}
+#contactMeForm input {
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    height: 30px;
+    width: 100%;
+    transition: .3s;
+}
+#contactMeForm textarea {
+    border: none;
+    width: 100%;
+    min-height: 68px;
+    max-height: 150px;
+    resize: vertical;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+}
+.form-validation {
+    position: absolute;
+    color: red;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+    font-size: 12px;
+    transition: .3s;
+}
+.has-error {
+    border-bottom: 1px solid red;
+    color: green;
+    font-size: 20px
+}

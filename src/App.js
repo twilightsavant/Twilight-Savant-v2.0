@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import axios from 'axios';
 
 //import layout elements
 import Header from './components/layout/Header';
@@ -20,18 +21,24 @@ import './components/layout/Header.css';
 
 
 class App extends Component {
-  state = {
-    sideDrawerOpen: false,
-    name: '',
-    company: '',
-    phone: '',
-    email: '',
-    message: ''
-  };
+  constructor() {
+    super()
+
+    this.state = {
+      sideDrawerOpen: false,
+      name: '',
+      company: '',
+      phone: '',
+      email: '',
+      message: ''
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
   //toggle the mobile navigation bar with a click
   drawerToggleClickHandler = () => {
-    console.log('clicked');
     this.setState((prevState) => {
       return {sideDrawerOpen: !prevState.sideDrawerOpen};
     });
@@ -44,14 +51,21 @@ class App extends Component {
 
   //update the form from the contact page
   handleChange = e => {
-    console.log("changed");
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit = e => {
+  async handleSubmit(e) {
     e.preventDefault(); //block refresh
     const { name, company, phone, email, message } = this.state;
     console.log("Boom Submit");
+
+    const form = await axios.post('/api/form', {
+      name, 
+      company,
+      phone,
+      email,
+      message
+    })
 
     //clear out form
     this.setState( {

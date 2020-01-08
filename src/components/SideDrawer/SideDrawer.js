@@ -21,6 +21,7 @@ const SideDrawer = props => {
             <li><Link to="/FullStack" onClick={props.click}>Full Stack</Link></li>
             <li><Link to="/Design" onClick={props.click}>Design</Link></li>
             <li><Link to="/Resume" onClick={props.click}>Resume</Link></li>
+            <li><Link to="/Contact" onClick={props.click}>Contact</Link></li>
         </ul>
     </nav> 
    );
