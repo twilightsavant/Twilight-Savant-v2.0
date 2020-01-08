@@ -42,9 +42,9 @@ function Resume() {
                         
                         <div className="resumeText_1">
                             <div><span>PATRICK MERLINO</span></div>
-                            I have a been a programmer, consultant and business owner since the mid 90s. A diverse knowledge of programming languages and their strengths on the web means applications can be completed effectiently and professionaly.
+                            As a programmer, consultant and business owner since the mid 90s. I bring a diverse knowledge of programming languages and their strengths to each web project.  My experience includes social media web portal development, hundreds of websites, and successfully achieving year over year multi-million dollar sales volumes via an e-commerce storefront.
 
-                            <p>My experience building multi-million dollar e-commerce stores from the ground up ensures best practices are implemented and sales funnels are optimized. I am enjoy working with a team as a full stack programmer helping companies realize their application goals.</p>
+                            <p>I am able to lead a team or participate as a team member as a full stack programmer. I enjoy contributing to company growth and profitability through the design, development and implementation of web based applications and tools.</p>
 
                         </div>
                         <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
@@ -56,7 +56,7 @@ function Resume() {
                 <div className="resume_flex">
                         <div><span>SKILLS</span></div>
                         <ul>
-                            <li>E-Commerce Preograming</li>
+                            <li>E-Commerce Programmer</li>
                             <li>Custom Front & Back end systems</li>
                             <li>CMS development</li>
                             <li>API integrations</li>

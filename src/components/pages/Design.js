@@ -49,7 +49,7 @@ function Design() {
                         
                         <div className="graphicText_1_adobe">
                             <div><span>ADOBE SUITE EXPERIENCE</span></div>
-                            The cornerstone of graphic design the Adobe suite provides the power and flexability required in today’s industry. From online design, print assets, video editing or post processing effects its where projects begin. With over 20 years experience in all aspects of the Adobe suite a solution can be found for your project.
+                            With over 20 years of experience in all aspects of Adobe Suite, I am able to bring the power and flexibility of this industry cornerstone to your project. From graphic design, print collateral, video editing or post processing effects I am able to bring  Adobe’s powerful solutions to the table in the creation and fulfillment of your  project
                             <p>Photoshop | In Design  |  Illustrator  |  After Effects  |  Premier</p>
                         </div>
                         <div className="graphic_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
@@ -81,7 +81,7 @@ function Design() {
                 <div className="graphicText_flex">
                     <div className="graphicText_1">
                         <div><span>Web Design Artwork</span></div>
-                        Even the most complex web application starts with a solid design foundation. From the single page display site to the largest of social platform undertakings a consistent and pleasing design sets the tone for the user. I can help get the look correct before the coding begins and help carry the UI through to the end.
+                        No building will stand the test of time without a solid foundation, just as a web application can not truly reach its potential without solid graphic design. From the single page display site to the largest of social platform undertakings, a consistent and pleasing design sets the tone for the user. I can help get the look correct before the coding begins and carry the UI and look and feel through to completion. 
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@ function Design() {
                 <div className="graphicText_flex">
                     <div className="graphicText_1">
                         <div><span>Print Design Artwork</span></div>
-                        Camera ready artwork for physical media is essential to building a brand and a business. Starting from the existing look of a customers website print materials can be created for any size and any quantity. From business cards to billboards I can deliver a pleasing product...
+                        Camera ready artwork for physical media is essential to building a brand and a business. Print materials and marketing collateral created utilizing design elements from the projects’ web design and color palette help create a cohesive and consistent look and theme.  From business cards to brochures, postcards to billboards, I can deliver effective and visually pleasing materials in the format that the printer needs to complete the project.
                     </div>
                 </div>
             </div>

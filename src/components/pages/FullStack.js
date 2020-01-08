@@ -59,7 +59,7 @@ function FullStack() {
                         <div className="stack_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
                         <div className="stackText_1">
                             <div><span>HARDENED ARMS</span></div>
-                            A full stack public facing e-commerce solution at scaled traffic demands. Dynamic order managment, product editing, e-commerce categories and user databases allowed a highly flexible website. Full administrator control panel to edit all aspects of both dynamic and static content displayed on the front end. Integrated into shipping fulfillment systems, quickbooks API accounting integration, credit card gateway(s) and realtime marketing tracking.
+                            A full stack, public facing, e-commerce solution website built with full scale-ability and the ability to handle all traffic demands. High volume e-commerce solution and user database featuring thousands of products. Featuring full administrator editing of dynamic and static front end content. Back end integration into shipping fulfillment systems, quick books accounting API, credit card gateway and real-time marketing and performance tracking.
                         </div>
                         <div className="stackThumbnail"><img src={fullstack_stack_1} alt="Hardened Arms Thumbnail" /></div>
                         <div>&nbsp;</div>
@@ -83,7 +83,7 @@ function FullStack() {
                         <div className="stackThumbnail"><img src={fullstack_stack_2} alt="Fireco Training Thumbnail" /></div>
                         <div id="stackText_2">
                             <div><span>FIRECO TRAINING</span></div>
-                            Government compliant training solution for the Fire Fighting industry. Complete training program class builder, testing system and record keeping system. Secure testing enviroment with audit capabilities meeting government guidelines. Allowed for the managment of an entire fire department’s training curriculum from a single application accessabile to personnel both in class and at home. 
+                            A Government compliant training solution developed for the Fire Fighting industry. Incorporating a training curriculum builder and test builder. Features included auto grading, provisions for essay question w/teacher grading, practice tests and timed formal testing. Department, station house and individual training tracking and record keeping system integration. This program featured a secure testing environment with audit capabilities, fully compliant with stringent government guidelines for fire personnel. This app allowed for the management of fire department written curriculum, onsite and offsite training events and record keeping and training deadline reminders. All Department members are able to complete curriculum from in station classes or online from home.
                         </div>
                         <div className="stack_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
                         <div>&nbsp;</div>
@@ -107,7 +107,7 @@ function FullStack() {
                         <div className="stack_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
                         <div className="stackText_1">
                             <div><span>MY PETS AND PEOPLE</span></div>
-                            Custom social media platform centered around Pets and their owners. A full stack solution providing all the features of a classic social system, including profile management, friends lists, video uploads, picture uploads, status posts and user tagging. Complete with administrator management of users, static and dynamic content.
+                            A custom social media portal centered around pets and their owners. A full stack solution providing all the features of a classic social system, including profile management, friends lists, video uploads, picture uploads, status posts, user tagging, ad serving and dog treat purchase revenue models. The site contained complete tools for admin management of users, static and dynamic content.
                         </div>
                         <div className="stackThumbnail"><img src={fullstack_stack_3} alt="My Pets and People Thumbnail" /></div>
                         <div>&nbsp;</div>
