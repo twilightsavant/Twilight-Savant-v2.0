@@ -4,14 +4,15 @@
 }
 .form-wrap {
     position: relative;
+    margin-bottom: 35px;
 }
-#contactMeForm label {
-    display: inline;
-    font-weight: bold;
-    position: relative;
-    top: 25px;
-    pointer-events: none;
+.form-wrap.textarea{
+    margin-bottom: 30px;
 }
+#contactMeForm.formHidden {
+    display: none;
+}
+
 #contactMeForm input {
     border: none;
     border-bottom: 1px solid white;
@@ -20,7 +21,18 @@
     height: 30px;
     width: 100%;
     transition: .3s;
+    padding: 10px 0px;
 }
+
+#contactMeForm input, #contactMeForm textarea {
+    font-size: 14px;
+    font-family: Arial;
+}
+
+#contactMeForm input.has-error, #contactMeForm textarea.has-error {
+    border-bottom: 1px solid red;
+}
+
 #contactMeForm textarea {
     border: none;
     width: 100%;
@@ -30,18 +42,64 @@
     border-bottom: 1px solid white;
     background: none;
     color: white;
+    transition: .3s;
 }
-.form-validation {
+
+#contactMeForm input::placeholder, #contactMeForm textarea::placeholder {
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+    font-family: Arial;
+    font-size: 14px;
+}
+.form-message {
     position: absolute;
     color: red;
     right: 0;
     bottom: 0;
-    transform: translate(0, 100%);
     font-size: 12px;
     transition: .3s;
 }
-.has-error {
-    border-bottom: 1px solid red;
-    color: green;
-    font-size: 20px
+.form-message.invalid {
+    transform: translate(0, 100%);
 }
+#contactSubmitButton {
+    background: #020a1e;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+#contactSentPar {
+    position: relative;
+    top: -10px;
+}
+#contactSent {
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 15px 15px 20px;
+    font-size: 14px;
+    position: absolute;
+    transform: translate(-1000px);
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+#contactSent.formHidden {
+    transform: translateX(0);
+}
+.check {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 18px;
+    width: 7px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    position: relative;
+    top: 4px;
+    margin-right: 15px;
+  }
+

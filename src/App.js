@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import axios from 'axios';
+
 
 //import layout elements
 import Header from './components/layout/Header';
@@ -26,15 +26,8 @@ class App extends Component {
 
     this.state = {
       sideDrawerOpen: false,
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      message: ''
     };
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   //toggle the mobile navigation bar with a click
@@ -47,34 +40,6 @@ class App extends Component {
   //make the backdrop go away with a click
   backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
-  }
-
-  //update the form from the contact page
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  async handleSubmit(e) {
-    e.preventDefault(); //block refresh
-    const { name, company, phone, email, message } = this.state;
-    console.log("Boom Submit");
-
-    const form = await axios.post('/api/form', {
-      name, 
-      company,
-      phone,
-      email,
-      message
-    })
-
-    //clear out form
-    this.setState( {
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      message: ''
-    })
   }
 
   render() {
@@ -95,7 +60,7 @@ class App extends Component {
         <Route path="/Design" component={Design} />
         <Route path="/Resume" component={Resume} />
         <Route path="/Contact"> 
-          <Contact handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+          <Contact />
         </Route>
         <Footer />
       </Router>

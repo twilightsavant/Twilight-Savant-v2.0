@@ -34,11 +34,13 @@
     color: white;
     align-self: center;
     font-size: 14px;
-    padding-right: 10px;
+    padding-right: 30px;
     padding-bottom: 20px;
     padding-left: 30px;
 }
 
-.contactText_1 div {
-    margin-bottom: 20px;
+@media screen and (max-width: 900px) {
+    .contact_leftAccent, .contact_rightAccent {
+        display: none;
+    }
 }

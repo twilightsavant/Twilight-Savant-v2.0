@@ -40,7 +40,7 @@ const parallaxData = [
                     <div>&nbsp;</div>
                     <div className="contact_leftAccent"><img src={fullstack_leftAccent} alt="Left Accent" /></div>
                     <div className="contactText_1">
-                        <ContactForm change={props.handleChange} handleSubmit={props.handleSubmit} />
+                        <ContactForm />
                     </div>
                     <div className="contact_rightAccent"><img src={fullstack_rightAccent} alt="Right Accent" /></div>
                     <div>&nbsp;</div>

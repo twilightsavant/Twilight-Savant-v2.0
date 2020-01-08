@@ -1,7 +1,8 @@
 import React from 'react';
-import { render } from "react-dom";
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from "yup";
+import Error from '../Error';
+import axios from 'axios';
 
 
 /* Import Styles */
@@ -31,77 +32,109 @@ const validationSchema = Yup.object().shape({
 
 const ContactForm = props => {
 
+    let formVisible = true;
+
         //<span className={nameInputErrorStyle}>Invalid phone number format</span>
         return (
-            <div id="contactMeForm">
-                <Formik
-                    initialValues={{name: "", company: "", phone: "", email: "", message: ""}}
-                    validationSchema={validationSchema}
-                >
-                    {({values, errors, touched, handleChange, handleBlur}) => (
-                    <form onSubmit={props.handleSubmit}>
-                        {JSON.stringify(values)}
-                        <div className="form-wrap">
-                            <label className="contactFormLabel name" htmlFor="name">Name</label>
-                            <input 
-                                type="text"
-                                name="name"
-                                id="name"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.name}
-                                className={touched.name && errors.name ? "has-error" : null}
-                            />
+            <React.Fragment>
+                <div id="contactMeForm">
+                    <Formik
+                        initialValues={{name: "", company: "", phone: "", email: "", message: ""}}
+                        validationSchema={validationSchema}
+                        onSubmit={(values, {setSubmitting, resetForm}) => {
+                            setSubmitting(true);
+
+                            axios.post('/api/form', {
+                                name: values.name,
+                                company: values.company,
+                                phone: values.phone,
+                                email: values.email,
+                                message: values.message
+                            });
                             
-                        </div>
-                        <div className="form-wrap">
-                            <label className="contactFormLabel company" htmlFor="company">Company</label>
-                            <input 
-                                type="text"
-                                name="company"
-                                id="company"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.company}
-                            />
-                        </div>
-                        <div className="form-wrap">
-                            <label className="contactFormLabel phone" htmlFor="phone">Phone</label>
-                            <input 
-                                type="text"
-                                name="phone"
-                                id="phone"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.phone}
-                            />
-                        </div>
-                        <div className="form-wrap">
-                            <label className="contactFormLabel phone" htmlFor="email">Email</label>
-                            <input 
-                                type="text"
-                                name="email"
-                                id="email"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.email}
-                            />
-                        </div>
-                        <div className="form-wrap">
-                            <label className="contactFormLabel Message" htmlFor="message">Message</label>
-                            <textarea
-                                name="message"
-                                id="message"
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.message}
-                            />
-                        </div>                        
-                        <button  type="submit">submit</button>
-                    </form>
-                )}                
-                </Formik>
-            </div>
+                            formVisible = false;
+
+                            setSubmitting(false);
+                            resetForm();
+                        }}
+                    >
+                        {({values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting}) => (
+                        <form onSubmit={handleSubmit}>
+                            <div className="form-wrap">
+                                <input 
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="NAME"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.name}
+                                    className={touched.name && errors.name ? "has-error" : null}
+                                />
+                                <Error touched={touched.name} message={errors.name} />
+                            </div>
+                            <div className="form-wrap">
+                                <input 
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    placeholder="COMPANY"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.company}
+                                    className={touched.company && errors.company ? "has-error" : null}
+                                />
+                                <Error touched={touched.company} message={errors.company} />
+                            </div>
+                            <div className="form-wrap">
+                                <input 
+                                    type="text"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="PHONE"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.phone}
+                                    className={touched.phone && errors.phone ? "has-error" : null}
+                                />
+                                <Error touched={touched.phone} message={errors.phone} />
+                            </div>
+                            <div className="form-wrap">
+                                <input 
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="EMAIL"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.email}
+                                    className={touched.email && errors.email ? "has-error" : null}
+                                />
+                                <Error touched={touched.email} message={errors.email} />
+                            </div>
+                            <div className="form-wrap textarea">
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="MESSAGE"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.message}
+                                    className={touched.message && errors.message ? "has-error" : null}
+                                />
+                                <Error touched={touched.message} message={errors.message} />
+                            </div>                        
+                            <button id="contactSubmitButton" type="submit" disabled={isSubmitting}>Submit</button>
+                            <span id="contactSentPar">
+                                <span id="contactSent" className={formVisible ? "formVisible" : "formHidden"}>
+                                    <span className="check" />Your Message Has Been Sent
+                                </span>
+                            </span>
+                        </form>
+                    )}                
+                    </Formik>
+                </div>
+            </React.Fragment>
         );
 }
 
