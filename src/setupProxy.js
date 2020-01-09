@@ -6,7 +6,7 @@ module.exports = app => {
     "/api/form",
     proxy({
       target: "http://www.twilightsavant.com:3001",
-      changeOrigin: true,
+      changeOrigin: false,
       //pathRewrite: {
       //  "^api/form": "api/form"
       //}
