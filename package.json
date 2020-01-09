@@ -23,12 +23,12 @@
   },
   "scripts": {
     "devStart": "nodemon index.js",
-    "start": "PORT=80 react-scripts start",
+    "startClient": "PORT=80 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "npm run start --prefix backend",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
+    "start": "concurrently \"npm run server\" \"npm run startClient\""
   },
   "eslintConfig": {
     "extends": "react-app"
