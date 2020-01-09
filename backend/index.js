@@ -8,10 +8,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
     console.log("FOUND ME");
+    res.status(200).send("Found Me");
 })
 
 app.post('/api/form', (req, res) => {
     sendMail(req).catch(console.error);
+    res.sendStatus(200);
 })
 
 const PORT = process.env.PORT || 3001
