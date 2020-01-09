@@ -6,6 +6,10 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.get('/', (req, res) => {
+    console.log(reg);
+})
+
 app.post('/api/form', (req, res) => {
     sendMail(req).catch(console.error);
 })
