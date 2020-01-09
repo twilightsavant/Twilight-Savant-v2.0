@@ -44,7 +44,7 @@ const ContactForm = props => {
                         onSubmit={(values, {setSubmitting, resetForm}) => {
                             setSubmitting(true);
 
-                            axios.post('api/form', {
+                            axios.post('http://www.twilightsavant.com:3001/api/form', {
                                 name: values.name,
                                 company: values.company,
                                 phone: values.phone,
