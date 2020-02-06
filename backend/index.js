@@ -4,6 +4,10 @@ const nodemailer = require('nodemailer');
 const app = express();
 
 app.use(bodyParser.json())
+
+
+res.setHeader('Access-Control-Allow-Origin', '*');
+
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
